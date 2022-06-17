@@ -10,7 +10,7 @@ def maxArea(self, height):
             temp = (r-l)*min(height[l],height[r])
             if temp>max_now: max_now = temp
             if height[l] < height[r]:
-                l+=1;
+                l+=1
             else:
-                r-=1;
+                r-=1
         return max_now
