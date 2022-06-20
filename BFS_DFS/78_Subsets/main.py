@@ -1,11 +1,11 @@
 def subsets(self, nums):
-    """
-    :type nums: List[int]
-    :rtype: List[List[int]]
-    """
-    res = []
-    self.dfs(nums, [], res)
-    return res
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        res = []
+        self.dfs(nums, [], res)
+        return res
     
     def dfs(self, nums, path, res):
         res.append(path)
