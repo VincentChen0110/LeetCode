@@ -10,11 +10,11 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        self.ans = 0 
+        self.ans = 0
         def dfs(root):
             if not root: return 0
             left, right = dfs(root.left), dfs(root.right)
-            self.ans = max(self.ans, left+right)
-            return 1+max(left, right)
+            self.ans = max(self.ans,left+right)
+            return 1+max(left,right)
         dfs(root)
         return self.ans

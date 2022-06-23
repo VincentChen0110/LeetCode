@@ -29,5 +29,18 @@ def diameterOfBinaryTree(root):
     dfs(root)
     return self.ans
 
-
+# Test 110. Balanced Binary Tree
+# a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+# Input: root = [3,9,20,null,null,15,7]
+# Output: true
+def isBalanced(root):
+    self.res = True
+    def dfs(root):
+        if not root: return 0
+        left,right = dfs(root.left),dfs(root.right)
+        if abs(left-right)>1:
+            self.res = False
+        return 1+max(left,right)
+    dfs(root)
+    return self.res
 
