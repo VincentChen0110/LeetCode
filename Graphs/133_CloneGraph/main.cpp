@@ -31,7 +31,7 @@ Node* dfs(Node* cur, unordered_map<Node*,Node*> &mp ){
             neighbour.push_back(dfs(it,mp));
         }
     }
-    clone->neighbors = neighbor;
+    clone->neighbors = neighbour;
     return clone;
 }
 
