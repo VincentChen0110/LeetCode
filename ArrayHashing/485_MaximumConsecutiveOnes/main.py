@@ -10,4 +10,5 @@ def findMaxConsecutiveOnes(self, nums):
         else:
             ans=0
         if final_ans < ans: final_ans = ans
+        
     return final_ans
