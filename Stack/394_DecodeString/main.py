@@ -16,7 +16,7 @@ def decodeString(self, s):
         elif c == '[':
             stack.append(cur_str)
             stack.append(cur_num)
-            cur_str = ''
+            cur_str = ''8
             cur_num = 0
         else:
             cur_str += c
